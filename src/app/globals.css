@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #faf6ef;
+  --color-cream-dark: #f0e9dc;
+  --color-ink: #2d2a26;
+  --color-ink-muted: #6b6560;
+  --color-green: #3d9b6e;
+  --color-green-light: #5cb88a;
+  --color-green-dark: #2d7a55;
+  --color-purple: #7c5cbf;
+  --color-purple-light: #9b7fd4;
+  --color-purple-soft: #ede6f8;
+  --color-card: #fffdf9;
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  min-height: 100dvh;
+}
+
+::selection {
+  background: var(--color-purple-soft);
+  color: var(--color-purple);
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
